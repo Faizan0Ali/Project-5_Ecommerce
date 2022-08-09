@@ -51,7 +51,6 @@ const createOrder = async (req, res)=>{ //authentication >> authotrisation >> cr
 }
 
 
-
 // ## PUT /users/:userId/orders
 // - Updates an order status
 // - Make sure the userId in params and in JWT token match.

@@ -38,7 +38,6 @@ const getProductsByQuery = async function(req, res){
      
       if(Object.keys(rest).length >0) return res.status(400).send({status:false, message:"enter only valid filter key in queryParams such as size, name, priceGreaterThan, priceLessThan, priceSort"}) //must recheck
 
-
       const invalid = {};  //validations
       if(size) {   
                size = [...new Set(size.toUpperCase().split(",").map((s)=>s.trim()))]; 
